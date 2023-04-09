@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 50%;
+  margin-top: 100px;
+  border: 1px solid black;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #27252e;
+}
+
+.card-header, .card-body {
+  background-color: #27252e;
+}
+
+.btn {
+  width: 100%;
+  background-color: #300a16;
+  border: #300a16;
+  color: white;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  align-items: center;
+}
+
+.forget-password {
+  display: flex;
+  justify-content: flex-end;
+  margin: -15px 0 15px 0;
+}
+.forget-password a {
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  font-size: 15px;
+}
+
+.other-text-container {
+  text-align: center;
+  margin: 15px;
+}
+
+.other-logo-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.other-logo {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  text-align: center;
+}
+
+input {
+  background-color: #18161c;
+  border-color: #18161c;
+}

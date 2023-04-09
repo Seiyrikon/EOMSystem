@@ -1,41 +1,67 @@
-<div class="col-8">
-  <div class="card">
-    <div class="card-header">Log-In</div>
-    <div class="card-body">
-      <form #loginForm="ngForm" (ngSubmit)="submitLogin()">
-        <div class="alert alert-danger" role="alert" [hidden]="!error">
-          {{ error }}
+<div class="container">
+  <div class="form-container">
+    <div class="card">
+      <div class="card-header">
+        <div class="logo">
+          <img src="" alt="BSU Logo">
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="email"
-            [(ngModel)]="form.email"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="password"
-            name="password"
-            [(ngModel)]="form.password"
-            required
-          />
-        </div>
-        <button
-          type="submit"
-          class="btn btn-primary"
-          [disabled]="!loginForm.valid"
-        >
-          Submit
-        </button>
-      </form>
+      </div>
+      <div class="card-body">
+        <form #loginForm="ngForm" (ngSubmit)="submitLogin()">
+          <div class="alert alert-danger" role="alert" [hidden]="!error">
+            {{ error }}
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              [(ngModel)]="form.email"
+              required
+              placeholder="Email address"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              [(ngModel)]="form.password"
+              required
+              placeholder="Password"
+            />
+          </div>
+          <label class="forget-password"><a href="#">Forgot Password?</a></label>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="!loginForm.valid"
+          >
+            Sign In
+          </button>
+
+          <div class="card-footer text-muted">
+            <div class="other-sign-in-container">
+              <div class="other-text-container">
+                <label class="sign-in-with">Or sign in with</label>
+              </div>
+                <div class="other-logo-container">
+                  <div class="logo">
+                    <img src="" alt="Logo">
+                  </div>
+                  <div class="logo">
+                    <img src="" alt="Logo">
+                  </div>
+                  <div class="logo">
+                    <img src="" alt="Logo">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
