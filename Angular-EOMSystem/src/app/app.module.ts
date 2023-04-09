@@ -11,6 +11,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     SignupComponent,
     ProfileComponent,
     SideNavComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
