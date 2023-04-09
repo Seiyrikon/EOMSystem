@@ -6,14 +6,14 @@
   background-color: #27252e;
 }
 
+input {
+  background-color: #18161c;
+  border-color: #18161c;
+} */
+
 .btn {
   width: 100%;
   background-color: #300a16;
   border: #300a16;
   color: white;
 }
-
-input {
-  background-color: #18161c;
-  border-color: #18161c;
-} */
